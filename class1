@@ -1,1 +1,19 @@
+create database school_db
+
+CREATE TABLE school_db.student (
+    studentid INT NOT NULL PRIMARY KEY,
+    fname VARCHAR(255) NOT NULL,
+    lname VARCHAR(255) NOT NULL,
+    age INT NOT NULL,
+    gender VARCHAR(10) NOT NULL  -- Added length for VARCHAR
+);
+insert into school_db.student(studentid, fname, lname,age, gender)
+values(1,"justus","gichohi",12,"male"),
+       (2,"moses","muya", 21,"male"),
+       (3,"mary", "wanjiku",32,"female"),
+       (4,"josephine", "wanjiku", 24, "female");
+       
+       select * from school_db.student
+
+
 
